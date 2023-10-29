@@ -1,8 +1,22 @@
 body {
+    font-size: large;
     margin-top: 7px;
     background-color: #003459;
     background-image: linear-gradient(#003459, black);
     color: white;
+}
+
+h3 {
+    font-size: small;
+    color: #85898a;
+}
+
+h2 {
+    text-align: center;
+    margin-top: -7px;
+    font-style: italic;
+    font-size: smaller;
+    color: #85898a;
 }
 
 h1 {
