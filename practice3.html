@@ -1,8 +1,41 @@
 <html>
-<head>    <link rel="stylesheet" type="text/css" href="stle.css"/></head>
-<i>UNDER CONSTRUCTION!!!</i>
+<head>    
+    <link rel="stylesheet" type="text/css" href="stle.css"/>
+</head>
+<h1>Password Verification</h1>
+<body>
+    <h2>"No it doesn't actually login to anything stop asking."</h2>
+    <br><br>
+    <label>Enter a new password:</label><br>
+    <input type="text" id="initial_pass" value=""><br>
+    <label>Re-enter the password:</label><br>
+    <input type="text" id="second_pass" value=""><br><br>
+    <button onclick="verify()">Login</button><br>
+    <div id="myDiv"></div>
 
+    <script>
+        function verify() {
+            var first = document.getElementById("initial_pass").value;
+            var second = document.getElementById("second_pass").value;
+            var myDiv = document.getElementById("myDiv")
+            if(first.length < 8) {
+                myDiv.style.color = "red";
+                myDiv.innerHTML = "Sorry, that password is too short!";
+            } else {
+            if(first != second) {
+                myDiv.style.color = "red";56
+                myDiv.innerHTML = "Your two entered passwords do not match!";
+            } else {
+                myDiv.style.color = "green";
+                myDiv.innerHTML = "Your password is good to go!"
+            }
+        }
+    }
 
+    </script>
 
-
+</body>
+<footer><br><br>  
+    You can click this <a href="index.html">link</a> to go back to the home page!
+</footer>
 </html>
