@@ -1,3 +1,23 @@
+table {
+    background-color: #003171;
+}
+
+td {
+    text-align: right;
+}
+tr:nth-child(even) {
+    background-color: rgba(182, 226, 245, 0.5);
+  }
+  
+th:nth-child(even),td:nth-child(even) {
+    background-color: rgba(182, 226, 245, 0.5);
+  }
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
 body {
     font-size: large;
     margin-top: 7px;
