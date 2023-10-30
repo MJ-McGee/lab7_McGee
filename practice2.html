@@ -1,8 +1,55 @@
 <html>
-<head><link rel="stylesheet" type="text/css" href="stle.css"/></head>
+<head>
+    <link rel="stylesheet" type="text/css" href="stle.css"/>
+    <style>
+        div {
+            border-style: solid;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    </style>
+</head>
+<h1>
+    CSS Font Control
+</h1>
 
-<h2>UNDER CONSTRUCTION!!!</h2>
+<body>
+    <h2>"If you don't like it, then why don't you design your own website?"</h2>
+    <div id="myP">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Interdum varius sit amet mattis vulputate enim nulla aliquet. 
+        Lobortis mattis aliquam faucibus purus in massa tempor nec feugiat. 
+        Nunc faucibus a pellentesque sit amet porttitor eget dolor morbi. Arcu odio ut sem nulla pharetra. 
+        Velit scelerisque in dictum non consectetur a erat nam at. Amet luctus venenatis lectus magna fringilla. 
+        Suscipit tellus mauris a diam maecenas sed enim ut sem. Facilisis mauris sit amet massa vitae tortor. 
+        Eleifend donec pretium vulputate sapien nec sagittis. Ornare arcu dui vivamus arcu felis bibendum ut tristique. 
+        Leo vel orci porta non. Id consectetur purus ut faucibus pulvinar. Amet risus nullam eget felis eget nunc lobortis mattis. 
+        Imperdiet massa tincidunt nunc pulvinar sapien et. Sem integer vitae justo eget magna fermentum iaculis eu non. 
+        Vel pharetra vel turpis nunc eget lorem dolor sed viverra.</p></div>
+        <label>Enter a 'R' value (between 0-255):</label><br>
+        <input type="text" id="R" value="0"><br>
+        <label>Enter a 'G' value (between 0-255):</label><br>
+        <input type="text" id="G" value="0"><br>
+        <label>Enter a 'B' value (between 0-255):</label><br>
+        <input type="text" id="B" value="0"><br><br>
+        <label>Enter a # value to change the width of the border:</label><br>
+        <input type="text" id="size" value="3"><br><br>
+        <button onclick="changeColor()">Try it out!</button>
+<script>
+    function changeColor() {
+        var r = document.getElementById("R").value;
+        var g = document.getElementById("G").value;
+        var b = document.getElementById("B").value;
+        var col = "rgb("+r+","+g+","+b+")";
+        document.getElementById("myP").style.color = col;
+        document.getElementById("myP").style.borderColor = col;
+        document.getElementById("myP").style.borderWidth = document.getElementById("size").value;
+    }
+</script>
 
-
-
+</body>
+<footer><br><br>  
+    You can click this <a href="index.html">link</a> to go back to the home page!
+</footer>
 </html>
